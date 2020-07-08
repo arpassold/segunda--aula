@@ -5,15 +5,27 @@ namespace segunda__aula
     class Program
     {
         static void Main(string[] args)
-        {
-            
-            var myBoolean= true;
 
-            Console.WriteLine("Você é maior de idade?");
-            var result = Console.ReadLine();
+        
+        { 
+            Console.WriteLine("Qual sua idade?");
+          var result = Console.ReadLine();
 
-            myBoolean = result== "sim";
-            Console.WriteLine(myBoolean );
+             //Transformando o texto que o usuário digitou  para um numero
+            var userAge = Int32.Parse(result);
+          
+
+            // comparando se a idade do usuário é maior que 15 ou menos que 51)
+                       
+            if(userAge > 15 && userAge < 51)
+            {  
+                 Console.WriteLine( "sim!Você tem idade para o entra 21");
+            }
+            else
+            {
+                //Coparando SE o valor da variavel não for true vai cair aqui                text = "Não! Eu sou menor de idade";
+                Console.WriteLine( "não, você não tem idade para o entra 21");
+            }
             
         }
     }
