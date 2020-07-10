@@ -30,7 +30,7 @@ namespace segunda__aula
         //          }
            else 
             {
-                //Coparando SE o valor da variavel não for true vai cair aqui                text = "Não! Eu sou menor de idade";
+                //Comparando SE o valor da variavel não for true vai cair aqui                text = "Não! Eu sou menor de idade";
                 Console.WriteLine( "não, você não tem idade para o entra 21");
             }
             
